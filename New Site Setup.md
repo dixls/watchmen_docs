@@ -17,25 +17,28 @@
 ## Upon Arrival
 
 #### Inspect the LAN Room or install location
-- ensure ethernet drops are terminated in patch panels as appropriate
-- double check that rack nuts are installed where needed, or install them
-- [ rack nut picture ]
-- note which jacks in the panel are populated from the rear of the rack, if not all of them
+- Ensure ethernet drops are terminated in patch panels as appropriate
+- Double check that rack nuts are installed where needed, or install them
+- ![[images/rack_nut_photo.jpg]]
+- Note which jacks in the panel are populated from the rear of the rack, if not all of them
 - Identify wall outlet that rack UPS will plug into
 
 #### Begin Racking equipment
-- general practice is to start with the MX unit at the top of the rack, and then proceed with the Switches adjacent to the patch panels
+- General practice is to start with the MX unit at the top of the rack, and then proceed with the Switches adjacent to the patch panels
 
 	> **Note!** Switches in particular may need support to aid in installation, either getting help from a second individual or using a temporary racking shelf is recommended.
 
-- [ mx picture ]
-- [ fully racked picture ]
-	- with two screws in opposite corners all the meraki equipment will be able to support itself while the remaining screws are secured
+- ![[mx_photo.jpg]]
+
+- ![[fully_racked_photo.jpg]]
+	- With two screws in opposite corners all the meraki equipment will be able to support itself while the remaining screws are secured
 - Racking the UPS
 	- Before racking: 
 		- Install the network card
 			- This will be packed separately and installs into the rear of the unit
-			- [ network card pictures ]
+			- ![[ups_network_pre.jpg]]
+			- ![[ups_network_open.jpg]]
+			- ![[ups_network_finished.jpg]]
 	> **Note!** The UPS units are quite heavy and the weight is not distributed evenly, it is highly recommended to have two people to move these into place. 
 	It is recommended to mount the UPS low down in the rack, for stability and to avoid strain during installation.
 
@@ -45,30 +48,32 @@
 		- Position the support rails such that the shelf portion is toward the side of the rack where front of the unit will face (the side with the display and battery disconnect)
 			- There are cases where the UPS will make sense to mount in reverse to the other equipment, plan your spacing and power cable routes before beginning mounting
 		- The support rails are threaded so do not require rack nuts, and install behind the rack rails instead of in front
-		- they also require the specific included screws and washers to mount securely in place
-			- make sure all required screws are threaded in place before tightening
-			- [ UPS rails photo ]
-			- ensure the rails are aligned such that the screws are able to tighten so the heads are nearly flush with the rack rails
-			- [ screw head photo ]
+		- They also require the specific included screws and washers to mount securely in place
+			- Make sure all required screws are threaded in place before tightening
+			- ![[ups_rails.jpg]]
+			- Ensure the rails are aligned such that the screws are able to tighten so the heads are nearly flush with the rack rails
+			- ![[ups_bolts.jpg]]
 	- Slide the UPS onto the rails
-		- 
-	- ( i feel like this needs better description? a demonstration would be ideal)
+		- ![[ups_racked.jpg]]
+	- ( I feel like this needs better description? a demonstration would be ideal)
 	- Once the UPS is secure, remove the warning tape and connect the battery ensuring it is fully seated
-	- [ battery connect photo ]
+	- ![[ups_battery_connected.jpg]]
+	- ![[ups_battery_detail.jpg]]
 	- Plug the UPS into the wall outlet identified earlier
-		- if working in an enclosed rack, be sure to route the power cable through a cable door or grommet
-		- [ photo? ]
+		- If working in an enclosed rack, be sure to route the power cable through a cable door or grommet
 
 ## Initial Setup
 
 #### UPS Setup
 - Power on the UPS (large horizontal button above the display)
 - Proceed through the setup wizard
+- ![[ups_setup_wizard.jpg]]
 - Once the UPS is ready, proceed to plug in power cables for the other rack equipment
 
 #### MX Setup
 - Once the MX unit has power, connect the ISP equipment to the primary WAN port of the MX
-		- using the SFP is generally preferred here, but ethernet works if SFP is unavailable for any reason
+		- Using the SFP is generally preferred here, but ethernet works if SFP is unavailable for any reason
+	- ![[isp_uplink_connected.jpg]]
 	- With the uplink to the ISP connected, the indicator light on the front of the unit should change from orange to cycling through rainbow colors.
 	- Upon successful connection the indicator light will begin to flash white, indicating that it is downloading its configuration
 	- If the indicator light reverts to orange, this may indicate that further [manual configuration](MX Manual Configuration) is needed, but continue to MG Setup before resorting to manual configuration.
@@ -76,6 +81,7 @@
 #### MG Setup
 - Ensure you are able to identify the jack in the patch panel that corresponds to the termination at the mounting point for the MG
 - Connect that jack to the PoE enabled WAN port on the MX unit (marked with a lightning bolt symbol) with an ethernet patch cable
+- ![[mg_ethernet_connection.jpg]]
 - With the MX powered on locate the mounting point for the MG Unit as provided on the network map.
 - Connect the ethernet and mount the MG according to the [mounting instructions](MG Mounting and installation)
 - With ethernet connected the MG should begin cycling through rainbow colors on its indicator light as it attempts to connect
@@ -84,22 +90,27 @@
 
 #### Connecting the Switches
 - Switches should be connected using an Ethernet SFP to the Ethernet LAN ports on the MX Unit.
+- ![[switch_sfp.jpg]]
+- ![[switch_connections.jpg]]
 - Once connected and powered on, the switches' indicator lights should cycle through rainbow colors. If the MX has a successful uplink, the switches will then proceed to blink white to indicate they are downloading a configuration, and display a steady white indicator when functioning normally.
 - No manual configuration should be required outside of Meraki Cloud
 > If the indicator light on the switches displays orange, this likely means additional configuration of the MX is required
 
 #### Mounting APs
 - Consult included instructions
-- be sure to plug in the ethernet cable before final mounting
-- make sure the ceiling tiles are fully seated after installation is complete
+- Be sure to plug in the ethernet cable before final mounting
+- Make sure the ceiling tiles are fully seated after installation is complete
 
 #### Patching the rest of the panel
-- using the shortest cables appropriate, but without strain on the cables, connect each jack in the patch panel to a corresponding port on the switches
-- which port goes to which jack is generally not significant except that you should avoid cables crossing as much as possible in order to maintain a neat appearance and ease of maintenance if required
+- Using the shortest cables appropriate, but without strain on the cables, connect each jack in the patch panel to a corresponding port on the switches
+- Which port goes to which jack is generally not significant except that you should avoid cables crossing as much as possible in order to maintain a neat appearance and ease of maintenance if required
+- ![[fully_patched.jpg]]
 
 Once the rack is fully patched the access points should come up, and if the MX and MG are configured, everything should be connected.
 
 Ensure the MX and all the switches' indicator LEDs are displaying solid white.
 
 At this point the hardware setup should be complete, and any further configuration can be handled via the cloud.
+
+Ensure to clean up the trash from all of the equipment and packaging, and leave the LAN room and the rest of the facility as clean as you found it.
 

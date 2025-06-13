@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "919e2c59b7864dd5",
+        "id": "a85edb2741972df6",
         "type": "tabs",
         "children": [
           {
-            "id": "eda98eed131f3aa9",
+            "id": "de8ad7190b0073f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "New Site Setup.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -169,11 +169,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eda98eed131f3aa9",
+  "active": "de8ad7190b0073f0",
   "lastOpenFiles": [
+    "New Site Setup.md",
+    "images/ups_setup_wizard.jpg",
+    "images/ups_rails.jpg",
+    "images/ups_racked.jpg",
+    "images/ups_network_pre.jpg",
+    "images/ups_network_open.jpg",
+    "images/ups_network_finished.jpg",
+    "images/ups_bolts.jpg",
+    "images/ups_battery_detail.jpg",
+    "images/ups_battery_connected.jpg",
+    "images/switch_sfp.jpg",
+    "images",
+    "images_large",
+    "untitled folder",
     "README.md",
     "Untitled.md",
-    "New Site Setup.md",
     "Welcome.md"
   ]
 }
