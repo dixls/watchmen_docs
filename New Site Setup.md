@@ -55,7 +55,6 @@
 			- ![ups bolt heads](images/ups_bolts.jpg)
 	- Slide the UPS onto the rails
 		- ![ups racked](images/ups_racked.jpg)
-	- ( I feel like this needs better description? a demonstration would be ideal)
 	- Once the UPS is secure, remove the warning tape and connect the battery ensuring it is fully seated
 	- ![ups battery connected](images/ups_battery_connected.jpg)
 	- ![ups battery connector detail](images/ups_battery_detail.jpg)
@@ -113,4 +112,3 @@ Ensure the MX and all the switches' indicator LEDs are displaying solid white.
 At this point the hardware setup should be complete, and any further configuration can be handled via the cloud.
 
 Ensure to clean up the trash from all of the equipment and packaging, and leave the LAN room and the rest of the facility as clean as you found it.
-

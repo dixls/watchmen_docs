@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "New Site Setup.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -171,6 +171,7 @@
   },
   "active": "de8ad7190b0073f0",
   "lastOpenFiles": [
+    "New Site Setup.pdf",
     "New Site Setup.md",
     "images/ups_setup_wizard.jpg",
     "images/ups_rails.jpg",
