@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "New Site Setup.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -171,6 +171,9 @@
   },
   "active": "de8ad7190b0073f0",
   "lastOpenFiles": [
+    "images/installed_ap.jpg",
+    "images_large/installed_ap.jpg",
+    "images_large/PXL_20250610_205020897.jpg",
     "New Site Setup.pdf",
     "New Site Setup.md",
     "images/ups_setup_wizard.jpg",
@@ -181,8 +184,6 @@
     "images/ups_network_finished.jpg",
     "images/ups_bolts.jpg",
     "images/ups_battery_detail.jpg",
-    "images/ups_battery_connected.jpg",
-    "images/switch_sfp.jpg",
     "images",
     "images_large",
     "untitled folder",
